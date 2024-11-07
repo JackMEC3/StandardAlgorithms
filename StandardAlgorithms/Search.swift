@@ -7,27 +7,17 @@
 
 import Foundation
 class Searching{
-    func linearSearch(_ numbers: [Int]) -> Int {
-        var sorted: [Int] = []
-        for i in 1...numbers.count{
-            var number = numbers[i]
-            for j in i...numbers.count{
-                if number < numbers[j]
-                    numbers[j] = number
-            }if numbers[i] > numbers[i+1]{
-                
+    func linearSearch(_ numbers: [Int], number: Int) -> Int {
+        var found = false
+        var position = 0
+        while found == false{
+            for i in 0...numbers.count{
+                if numbers[i] == number{
+                    var found = true
+                    var position = i
+                }
             }
         }
-        for i in 1..<numbers.count{
-            var number = numbers[i]
-            group.append(number)
-            sorted.append(group)
-            for i in 1...sorted.count{
-                if sorted[i][0]
-
-            
-            }
-                
-        }
+        return position
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import StandardAlgorithms
 
 final class SearchingTest: XCTestCase {
     func testLinearSearchWithIntegerArraysInAscendingOrderReturnPosition() {

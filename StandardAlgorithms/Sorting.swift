@@ -8,14 +8,14 @@
 import Foundation
 class Sorting{
     func bubbleSort(_ numbers: [Int]) -> [Int] {
-        var sorted: [Int] = []
         for i in 1...numbers.count{
-            var number = numbers[i]
-            for j in i...numbers.count{
-                if number > numbers
-            }if numbers[i] > numbers[i+1]{
-                
+            var number = sorted[i]
+            for j in i...sorted.count{
+                if number < sorted[j]{
+                    sorted[j] = number
+                }
             }
+            
         }
         for i in 1..<numbers.count{
             var number = numbers[i]
