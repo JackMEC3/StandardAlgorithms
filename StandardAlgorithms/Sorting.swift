@@ -23,12 +23,13 @@ class Sorting{
             sorted.append(group)
             for i in 1...sorted.count{
                 if sorted[i][0]
-
-            
+                    
+                    
             }
-                
+            
         }
-    }func mergeSort(_ numbers: [Int]) -> [Int] {
+    }
+    func mergeSort(_ numbers: [Int]) -> [Int] {
         var sorted: [[Int]] = []
         var group: [Int] = []
         for i in 1..<numbers.count{
@@ -36,6 +37,31 @@ class Sorting{
             group.append(number)
             sorted.append(group)
             for i in 1...sorted.count{
-                if sorted[i][0]
-
+                if sorted[i][0] {
+                    
+                }
+            }
+        }
+        
+    }
+    func quickSort(_ numbers: [Int]) -> [Int] {
+        var pivot = numbers[0]
+        var lower: [Int] = []
+        var higher: [Int] = []
+        for i in 0...numbers.count {
+            var number = numbers[i]
+            if number < pivot {
+                lower.append(numbers[i])
+            }
+            else if numbers[i] > pivot{
+                higher.append(numbers[i])
+                }
+            }
+        }
+        
+        let numbers = []
+        return numbers
+        
+        
+    }
 }
